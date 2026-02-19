@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="EduNest.png">
+</head>
+
+<body>
+    <div class="nav">
+        <a id="logo" href="index.html"><img src="EduNest.png" alt="EduNest"></a>
+        <div id="nav2">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="result.html">Result</a>
+            <a href="course.html">Courses</a>
+            <a href="adimisions.html" class="active">Adimissions</a>
+        </div>
+    </div>
+<form class="section2"
+      action="https://formsubmit.co/nishant999005@gmail.com"
+      method="POST"
+      enctype="multipart/form-data">
+
+    <label>Full Name</label>
+    <input type="text" name="fullname" placeholder="Enter your name" required>
+
+    <label>Select your photo</label>
+    <input type="file" name="photo">
+
+    <label>Father Name</label>
+    <input type="text" name="fathername" placeholder="Enter your father name">
+
+    <label>Mother Name</label>
+    <input type="text" name="mothername" placeholder="Enter your mother name">
+
+    <label>Gender</label>
+    <select name="gender" required>
+        <option value="" disabled selected>Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label>Class</label>
+    <select name="class" required>
+        <option value="" disabled selected>1-10</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+
+    <label>Phone No.</label>
+    <input type="tel" name="phone" placeholder="Enter your phone no.">
+
+    <label>City/Town</label>
+    <input type="text" name="city" placeholder="Enter your city">
+
+    <label>State</label>
+    <input type="text" name="state" placeholder="Enter your state">
+<div class="r2">
+    <label>Nationality</label>
+    <input class="r1" type="radio" name="nationality" value="Indian"> Indian
+    <input class="r1" type="radio" name="nationality" value="Other"> Other
+</div>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+
+</html>
