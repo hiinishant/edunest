@@ -1,3 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
 body{
     background:linear-gradient(45deg,rgb(255, 255, 255) , rgb(13, 141, 141));
     font-family: "Arial", sans-serif;
@@ -34,21 +44,24 @@ body{
 
 .section{
     display: flex;
-    padding: 1%;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 5%;
+    flex-wrap: wrap;
 }
 
 .section img{
-    height: 200px;
-    width: auto;
-    border-radius:20px;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 .section p{
-    text-align:justify;
-    padding-left: 3%;
-    color: rgb(43, 34, 34);
-    text-transform: capitalize;
+    flex: 1;
+    padding-left: 0;
 }
+
 
 .footer{
     color: white;
@@ -192,16 +205,16 @@ button:hover{
 }
 
 .tab{
-    margin-top: 20px;
-    margin: auto;
+    margin: 20px auto;
+    width: 95%;
+    max-width: 1000px;
     display: flex;
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.177);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    min-width: 550px;
-    max-width: 1000px;
-    flex-direction: column;
 }
+
 
 .tab p{
     font-weight: bold;
@@ -275,4 +288,41 @@ tr:hover{
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+@media (max-width: 768px){
+
+    .nav{
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #nav2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #logo img{
+        height: 70px;
+    }
+
+    .section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section p{
+        text-align: center;
+    }
+
+    table{
+        font-size: 14px;
+    }
+
+    .res{
+        width: 100%;
+    }
 }
